@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import logo from "../../assets/movie_logo.png";
 import { Form } from "../../components";
 import { useUserContext } from "../../providers/UserProvider";
@@ -7,6 +8,7 @@ import { useUserContext } from "../../providers/UserProvider";
 const Login = () => {
   const { login } = useUserContext();
   const [formData, setFormData] = useState({ email: "", password: "" });
+  const navigate = useNavigate();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -17,9 +19,12 @@ const Login = () => {
   };
 
   const handleSubmit = async () => {
-    await login(formData.email, formData.password);
+    const success = await login(formData.email, formData.password);
+    if (success) {
+      toast.success("Login successful.");
+      navigate("/");
+    }
   };
-
   const loginConfig = {
     inputs: [
       {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { registerUser } from "../../api/auth/auth";
 import logo from "../../assets/movie_logo.png";
 import Form from "../../components/Form/Form";
@@ -7,6 +7,7 @@ import { IUser } from "../../types/User.types";
 
 const Register = () => {
   const [formData, setFormData] = useState({} as IUser);
+  const navigate = useNavigate();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -17,7 +18,10 @@ const Register = () => {
   };
 
   const handleSubmit = async (formData: IUser) => {
-    await registerUser(formData);
+    const registrationSuccess = await registerUser(formData);
+    if (registrationSuccess) {
+      navigate("/login");
+    }
   };
 
   const registerConfig = {
