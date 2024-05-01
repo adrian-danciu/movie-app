@@ -1,18 +1,17 @@
 # MovieApp
 
-MovieApp is a modern web application built using React with Vite, designed to provide a seamless experience for movie enthusiasts to explore, favorite, and manage movies. The application integrates Firebase for authentication and data storage, allowing users to register, login, update their profile, and maintain a list of favorite movies.
+MovieApp is a  web application built using React with Vite, designed to provide a seamless experience for movie enthusiasts to explore, favorite, and manage movies. The application integrates Firebase for authentication and data storage, allowing users to register, login, update their profile, and maintain a list of favorite movies.
 
 <img width="1755" alt="image" src="https://github.com/adrian-danciu/technical-assignment/assets/100218355/4e206788-0549-4e20-a58b-ffa8df564ad1">
 
 ## Features
 
 - **User Authentication**: Users can register, log in, and log out. The application handles user authentication using Firebase, including features like password updates and session management.
-- **Movie Browsing**: Users can browse movies listed as popular, upcoming, or based on specific queries.
-- **Favorites Management**: Users can add or remove movies from their favorites list, which is accessible via their user profile.
-- **Responsive Design**: Built with mobile and desktop compatibility in mind, ensuring a smooth user experience across all devices.
-- **Dynamic Routing**: Utilizes React Router for navigation and dynamic URL handling, enhancing the browsing experience.
-
-## Technical Stack
+- **Movie Browsing**: Users can browse movies based on theri title, year, genre.
+- **Favorites Management**: Users can add or remove movies from their favorites list.
+- **Responsive Design**: Built with mobile and desktop compatibility in mind.
+  
+## Tech Stack
 
 - **React**
 - **Vite**
@@ -43,9 +42,13 @@ MovieApp is a modern web application built using React with Vite, designed to pr
    VITE_APP_ID=your_app_id_here
 
 4. **Start the development server**
-    Run in the terminal the command "npm run dev" and the server will start on http:/localhost:5173
+    Run in the terminal the command "npm run dev" and the server will start on http://localhost:5173
 
 5. **App Flow**
+   <br/>
 **Registration and Login**: Users start by registering an account or logging in. They can update their passwords through their profile settings.
+ <br/>
 **Browsing Movies**: users can browse movies.
-**Managing Favorites**: Users can add movies to their favorites list or remove them, which updates in real-time. Only registered users can use the favorites feature. 
+ <br/>
+**Managing Favorites**: Users can add movies to their favorites list or remove them, which updates in real-time. Only registered users can use the favorites feature.
+ <br/> 
