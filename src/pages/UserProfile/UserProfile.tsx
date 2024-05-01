@@ -10,7 +10,7 @@ const UserProfile = () => {
   }
 
   return (
-    <div className="bg-background h-screen py-4">
+    <div className="bg-background content-height py-4">
       <div className="flex flex-col justify-center items-center text-primary gap-2">
         <img
           className="h-8 w-8 rounded-full"

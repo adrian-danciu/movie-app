@@ -1,8 +1,9 @@
+import { Iinput } from "../../types/Input.types";
 import Button from "../Button/Button";
-import Input, { TInput } from "../Input/Input";
+import Input from "../Input/Input";
 
 interface IFormConfig {
-  inputs: TInput[];
+  inputs: Iinput[];
   handleSubmit: () => void;
   type: string;
 }
@@ -14,7 +15,7 @@ interface TForm {
 const Form: React.FC<TForm> = ({ configs }) => {
   return (
     <form className="space-y-6">
-      {configs.inputs.map((input: TInput, index) => (
+      {configs.inputs.map((input: Iinput, index) => (
         <Input
           key={index}
           config={{

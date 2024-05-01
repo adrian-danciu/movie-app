@@ -8,7 +8,7 @@ const MovieDetails: React.FC<IMovieDetailsProps> = ({ movie }) => {
   }
 
   return (
-    <div className="flex lg:flex-row flex-col p-6 gap-4 lg:gap-20 bg-background text-text min-h-screen">
+    <div className="flex lg:flex-row flex-col p-6 gap-4 lg:gap-20 bg-background text-text content-height">
       <div className="flex-shrink-0">
         <img
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}

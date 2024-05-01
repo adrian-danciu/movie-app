@@ -1,5 +1,5 @@
-import { Movie } from "./Movie.types";
+import { IMovieDetails } from "./Movie.types";
 
 export interface TCard {
-  data: Movie;
+  data: IMovieDetails;
 }

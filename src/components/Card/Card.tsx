@@ -8,11 +8,11 @@ const Card: React.FC<TCard> = ({ data }) => {
   const navigate = useNavigate();
   const { currentUser, toggleFavorite } = useUserContext();
 
-  const isFavorite = currentUser?.favorites.includes(data.id);
+  const isFavorite = currentUser?.favorites.includes(data.id as string);
 
   const handleFavorite = async (event: React.MouseEvent<HTMLButtonElement>) => {
     event.stopPropagation();
-    await toggleFavorite(data.id);
+    await toggleFavorite(data.id as string);
   };
 
   const handleClick = () => {

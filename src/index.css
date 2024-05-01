@@ -9,3 +9,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.content-height {
+  height: calc(100vh - 4rem);
+}

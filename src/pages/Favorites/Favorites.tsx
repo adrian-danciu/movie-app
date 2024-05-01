@@ -22,7 +22,7 @@ const Favorites = () => {
   }, [currentUser?.favorites]);
 
   return (
-    <div className="p-4 bg-background h-screen">
+    <div className="p-4 bg-background content-height">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {favoriteMovies.length === 0 && (
           <h1 className="text-2xl text-center text-primary">

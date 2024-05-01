@@ -50,7 +50,7 @@ export function useFetchMovies(filters: {
     };
 
     fetchData();
-  }, [filters, filters.title, filters.year, filters.genre]); // Ensuring all parts of filters trigger the effect
+  }, [filters, filters.title, filters.year, filters.genre]);
 
   return { data, loading, error };
 }
