@@ -10,8 +10,8 @@ const UserProfile = () => {
   }
 
   return (
-    <div className="bg-background content-height py-4">
-      <div className="flex flex-col justify-center items-center text-primary gap-2">
+    <div className="bg-background min-h-screen py-8 px-6">
+      <div className="flex flex-col justify-center items-center text-primary gap-6">
         <img
           className="h-8 w-8 rounded-full"
           src="https://i.pinimg.com/736x/38/cf/07/38cf07312b17a66a8e0ee071d1f73043.jpg"

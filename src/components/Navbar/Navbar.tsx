@@ -114,8 +114,8 @@ const Navbar = () => {
       </div>
 
       {mobileMenuOpen && (
-        <div className="sm:hidden">
-          <div className="space-y-1 px-2 pb-3 pt-2">
+        <div className="sm:hidden absolute top-16 left-0 right-0 bg-background shadow-md z-20">
+          <div className="px-2 py-3 space-y-1">
             {navigation.map((item) => (
               <Link
                 key={item.name}
