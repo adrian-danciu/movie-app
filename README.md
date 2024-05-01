@@ -1,5 +1,7 @@
 # MovieApp
 
+**Deploy**: https://exquisite-wisp-5246f7.netlify.app/
+
 MovieApp is a  web application built using React with Vite, designed to provide a seamless experience for movie enthusiasts to explore, favorite, and manage movies. The application integrates Firebase for authentication and data storage, allowing users to register, login, update their profile, and maintain a list of favorite movies.
 
 <img width="1755" alt="image" src="https://github.com/adrian-danciu/technical-assignment/assets/100218355/4e206788-0549-4e20-a58b-ffa8df564ad1">
