@@ -3,7 +3,7 @@ import { Button, Input, SpinnerComponent } from "../../components";
 import Card from "../../components/Card/Card";
 import { useDebounce } from "../../hooks/useDebounce";
 import { useFetchMovies } from "../../hooks/useFetch";
-import { IMovieCard } from "../../types/Movie.types";
+import { IMovieCard, IMovieDetails } from "../../types/Movie.types";
 import { genreMapping } from "../../utils/movieGenres";
 
 const Home = () => {
@@ -104,7 +104,7 @@ const Home = () => {
       ) : (
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {movies.map((movie: IMovieCard) => (
-            <Card data={movie} key={movie.id} />
+            <Card data={movie as IMovieDetails} key={movie.id} />
           ))}
         </div>
       )}
